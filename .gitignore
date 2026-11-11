@@ -1,0 +1,23 @@
+# Visual Studio / VS Code cache
+.vs/
+.vscode/
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Cấu hình môi trường (Không nên đẩy lên Git)
+appsettings.Development.json
+appsettings.*.json
+.env
+
+# Mac / Linux OS files
+.DS_Store
+Thumbs.db
