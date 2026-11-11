@@ -26,9 +26,9 @@ app.MapGet("api/tickets/{id:int}", (int id) =>
 });
 
 
-app.MapGet("api/users/{userId:string}/tickets", (string userId) =>
+app.MapGet("api/users/{userId}/tickets", (String userId) =>
 {
-    var userTickets = tickets.Where(t => t.SenderId == userId).ToList;
+    var userTickets = tickets.Where(t => t.SenderId == userId).ToList();
     return userTickets is not null
         ? Results.Ok(userTickets)
         : Results.NotFound(new ApiError("USER_NOT_FOUND", "Không tìm thấy người dùng"));
